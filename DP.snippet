@@ -29,4 +29,33 @@ public $Type$ $Name$
             </Declarations>
         </Snippet>
     </CodeSnippet>
+    
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Better DP Initialization</Title>
+            <Description>Add static constructor calling DP.InitializeProperties</Description>
+            <Shortcut>DPI</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[static $classname$()
+    {
+        DP.InitializeProperties( typeof( $classname$ ) );
+    }]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>BetterDP</Namespace>
+                </Import>
+            </Imports>
+            <Declarations>
+                <Literal Editable="false">
+                    <ID>classname</ID>
+                    <ToolTip>Class name</ToolTip>
+                    <Function>ClassName()</Function>
+                    <Default>ClassNamePlaceholder</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
 </CodeSnippets>
