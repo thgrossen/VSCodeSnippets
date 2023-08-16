@@ -63,4 +63,37 @@ public $Type$ $Name$
             </Declarations>
         </Snippet>
     </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Better DP OnPropertyChanged</Title>
+            <Description>Add overridden method OnPropertyChanged( DependencyPropertyChangedEventArgs e )</Description>
+            <Shortcut>DPC</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[protected override void OnPropertyChanged( DependencyPropertyChangedEventArgs e )
+        {
+            base.OnPropertyChanged( e );
+
+            if( e.Property.Name == nameof( this.$Name$ ) )
+            {
+                ;
+            }
+        }]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>BetterDP</Namespace>
+                </Import>
+            </Imports>
+            <Declarations>
+                <Literal>
+                    <ID>Name</ID>
+                    <ToolTip>DP Name</ToolTip>
+                    <Default>name</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
 </CodeSnippets>
