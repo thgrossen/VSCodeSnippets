@@ -96,4 +96,23 @@ public $Type$ $Name$
             </Declarations>
         </Snippet>
     </CodeSnippet>
+
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Write to the output window</Title>
+            <Description>Replaces 'print' with System.Diagnostics.Debug.WriteLine( "" )</Description>
+            <Shortcut>print</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[System.Diagnostics.Debug.WriteLine( "$end$" );]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>BetterDP</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+
 </CodeSnippets>
